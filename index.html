@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width">
+ 	<title>MI PRIMERA APP DE AUTENTICACION</title>
+ 	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins">
+ 	<link rel="stylesheet" type="text/css" href="miEstilo.css"> 	
+ </head>
+	<body>
+		<h1>Inicia sesion para comprar tus entradas</h1>
+		<div id="contenedor">
+			<div id="foto"></div>
+			<button type="button" id="logueo">Con tu correo electronico</button>
+			<div id="principal"></div>
+
+			<button id="guardar">Recordarme</button>
+			
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+		 <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<script>
+		  // Your web app's Firebase configuration
+		  var config = {
+		    apiKey: "AIzaSyB0VO3Gfxn-r5SH3O1urpxvJQ9AjAJ8ufM",
+		    authDomain: "appaut-ae4f8.firebaseapp.com",
+		    databaseURL: "https://appaut-ae4f8.firebaseio.com",
+		    projectId: "appaut-ae4f8",
+		    storageBucket: "appaut-ae4f8.appspot.com",
+		    messagingSenderId: "144342799552",
+		    appId: "1:144342799552:web:4c5ffc5b2e040d78f58925"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(config);
+		</script>
+		<script type="text/javascript" src="funcionalidadApp.js"></script>
+		
+	</body>
+
+</html>
